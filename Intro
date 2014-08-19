@@ -1,0 +1,8 @@
+Introduction to Programming for Non-Coders
+“Admins who Code”
+
+Description:
+Expose super admins/advanced declarative developers to the programmatic side of the platform. This class is targeted at non-coders (ie no development experience or formal training) to be more comfortable when handed a Visualforce page or trigger. The main purpose of this class is to help admins/declarative developers how to be able to be able to analyze code to see what it does, give them the tools to be able to tinker on existing code to extend or modify functionality, and set a foundation for being able to build your own triggers and test classes. In addition, this class aims to point out not only what the programmatic features are and when you can use them, but also when to turn to code (after you have fully exhausted the declarative tools on the platform).
+ 
+Requirements/Prerequisites:
+An attendee at this session should be comfortable with the declarative aspects of the platform. These include things from an understanding of the Salesforce object model (both standard and custom) and the declarative features for process automation(workflow and formula fields). The Introduction to Point-And-Click app development workshop might be sufficient preparation for this class, however an attendee will get more out of this class if they have more than a light introductory experience with the Force.com platform.
