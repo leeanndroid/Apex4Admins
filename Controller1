@@ -1,0 +1,9 @@
+public class OpportunitiesController {
+ 
+    public List<Opportunity> opportunities {get; set;}
+    
+    public OpportunitiesController() {
+		opportunities = [SELECT Id, Name, Account.Name, ExpectedRevenue, CloseDate from Opportunity WHERE OwnerId = :UserInfo.getUserId()];
+	}
+    	
+}
