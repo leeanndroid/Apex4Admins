@@ -12,8 +12,7 @@ for (Opportunity o : Trigger.new)
                 {
                     i++;
                 }
-                if(i == 0) //instead of all of this, you could just do proj[0]
-                //but why only operate on this one?  Why not all the projects?
+                if(i == 0) 
                 {
                     Milestone1_Project__c p2 = new Milestone1_Project__c(Opportunity__c = o.Id, Name = o.Name);
                     Insert p2;
