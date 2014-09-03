@@ -1,0 +1,42 @@
+<apex:page showHeader="false" controller="OpportunitiesController" standardStylesheets="true">
+    <style>
+        th { background-color: #ccc; }
+        td { padding: 5px; padding-left: 0px; background-color: white; }
+    </style>
+    <apex:pageBlock >
+    <apex:pageBlockSection title="My Opportunities" columns="1">
+    
+    <apex:dataTable value="{!opportunities}" var="opp" >
+
+            <apex:column >
+
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputLink value="/{!opp.Id}" target="_top">
+                    <apex:outputText value="{!opp.name}"/>
+                </apex:outputLink>
+                    
+
+            </apex:column>
+        
+            <apex:column >
+
+                <apex:facet name="header">Account</apex:facet>
+
+                <apex:outputText value="{!opp.Account.Name}"/>
+
+            </apex:column>
+        
+            <apex:column >
+
+                <apex:facet name="header">Expected Revenue</apex:facet>
+                <apex:outputText value="{0,number,$#,###,###.00}">
+                    <apex:param value="{!opp.ExpectedRevenue}" />
+                </apex:outputText>
+
+            </apex:column>
+       
+    </apex:dataTable>
+    
+    </apex:pageBlockSection>        
+    </apex:pageBlock>
+</apex:page>
